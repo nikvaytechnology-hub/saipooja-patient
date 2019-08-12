@@ -81,7 +81,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/dodger_blue"
+        android:textColor="#EB0909"
         android:textSize="15sp"
         android:layout_marginBottom="15dp"
         android:id="@+id/txtCreateAc"
