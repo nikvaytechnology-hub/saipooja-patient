@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nikvay.saipooja_patient.view.activity.AppointmentListActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_color">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_vector_back" />
+
+        <TextView
+            android:id="@+id/textAppointmentTitleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Appointment"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_toolbar_calendar"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:onClick="setDate"
+            android:id="@+id/iv_tool_calender"/>
+    </RelativeLayout>
+
+   <!-- <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search By Service Name "
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:background="@drawable/shape_edt_text"
+        android:drawableEnd="@drawable/ic_vector_search"
+        android:id="@+id/edt_search_service"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+-->
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_spinner"
+        android:layout_margin="5dp"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/rel_action_bar"
+        android:id="@+id/edt_search_service"/>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewAppointmentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/edt_search_service"
+            />
+
+
+            <ImageView
+                android:id="@+id/iv_empty_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/app_empty_list"
+                android:visibility="gone"
+                />
+
+
+</RelativeLayout>

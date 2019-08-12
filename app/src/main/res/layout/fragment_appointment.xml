@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="10dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Appoinment Details"
+          android:textColor="@color/blue"
+          android:textSize="20sp"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Select Service"
+              android:textColor="@color/black"
+              android:layout_margin="5dp"
+              android:textSize="15sp"/>
+          <Spinner
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/spinnerService"
+              >
+          </Spinner>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Selected Service"
+              android:visibility="gone"
+              android:id="@+id/serviceSelect"
+              android:textColor="@color/black"
+              android:layout_margin="5dp"
+              android:textSize="15sp"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Select Doctor"
+              android:textColor="@color/black"
+              android:layout_margin="5dp"
+              android:textSize="15sp"/>
+          <Spinner
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/spinnerDoctor"
+              >
+          </Spinner>
+          <RadioGroup
+              android:layout_marginTop="20dp"
+              android:id="@+id/radioGroup"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="2"
+              android:orientation="horizontal">
+
+              <RadioButton
+                  android:id="@+id/radioButtonNewApt"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:text="New Appt"
+                  android:layout_weight="1"
+                  android:textSize="18sp"/>
+
+              <RadioButton
+                  android:id="@+id/radioButtonfollowUp"
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Follow Up"
+                  android:textSize="18sp"/>
+          </RadioGroup>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_margin="5dp">
+
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="DateTime"
+                 android:layout_margin="5dp"
+                 android:textColor="@color/black"
+                 android:textSize="16sp"
+                 android:id="@+id/timeApt"
+                 android:drawableEnd="@drawable/ic_vector_calendar"/>
+
+
+
+         </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+                android:layout_margin="5dp"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Select Time"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+              <android.support.v7.widget.RecyclerView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/recyclerViewTime"/>
+
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+  </RelativeLayout>
+</FrameLayout>

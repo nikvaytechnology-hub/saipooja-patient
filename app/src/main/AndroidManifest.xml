@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nikvay.saipooja_patient">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/sai_pooja_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode">
+
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.DocumentPhotoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.EnquiryAddActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.VideoGallaryActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.PhotoGallaryActivity" />
+        <activity
+            android:name="com.nikvay.saipooja_patient.view.activity.VideoViewActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.GallaryActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.SaipoojaWebActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.PaymentActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.PreScriptionDateDetailsActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.PreSriptionActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.PreScriptionDetailActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.PaymentStatusActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.ClassListDetailActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.PatientAptmentDetailsActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.DateTimeSelectActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.AppointmentListActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.DoctorListActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.ServiceListActivity" />
+       <!-- <activity android:name="com.nikvay.saipooja_patient.utils.LogoutApplicationDialog" />
+       --> <activity android:name="com.nikvay.saipooja_patient.view.activity.RegistrationActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.SocialIntegrationActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.LoginActivity" />
+        <activity android:name="com.nikvay.saipooja_patient.view.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nikvay.saipooja_patient.MainActivity"/>
+
+
+        <service
+            android:name="com.nikvay.saipooja_patient.firebaseservice.MyFirebaseMessagingService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+    </application>
+
+</manifest>

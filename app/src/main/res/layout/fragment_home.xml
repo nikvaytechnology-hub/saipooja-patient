@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameLayout"
+    android:background="@drawable/change_theme">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#FFFFFF"
+            >
+
+            <ImageView
+                android:id="@+id/dashbordHospital"
+                android:layout_width="200dp"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/sai_pooja_logo"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/card_back_shape"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="15dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:id="@+id/linearFindDoctor"
+                                android:layout_weight="1">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:cardElevation="1dp"
+                                    app:contentPadding="0.5dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    app:cardCornerRadius="12dp"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/multicolor"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/ic_vector_sdoctor"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Find a Doctor"
+                                            android:textColor="@color/black"
+                                            />
+
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginStart="15dp"
+                                android:id="@+id/linearAppoinment"
+                                >
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:contentPadding="0.5dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    app:cardCornerRadius="12dp"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/multicolor"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/ic_vector_sclock"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Book Appointment"
+                                            android:textColor="@color/black"
+
+                                            />
+
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="15dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:id="@+id/linearAptDetail"
+                                android:layout_weight="1">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:cardElevation="1dp"
+                                    app:contentPadding="0.15dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    app:cardCornerRadius="12dp"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/multicolor"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/ic_vector_appointment_list" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Appointment List"
+                                            android:textColor="@color/black"
+                                            />
+
+
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginStart="15dp"
+                                android:id="@+id/linearPreScription"
+                                >
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:contentPadding="0.5dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    app:cardCornerRadius="12dp"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/multicolor"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/ic_dashbord_prescription"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Prescription"
+                                            android:textColor="@color/black"
+
+                                            />
+
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="15dp"
+                                android:gravity="center"
+                                android:id="@+id/ll_visit"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:cardElevation="1dp"
+                                    app:contentPadding="0.15dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    app:cardCornerRadius="12dp"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/multicolor"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/ic_vector_visit"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Visit Us"
+                                            android:textColor="@color/black"
+                                            />
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginStart="15dp"
+                                android:id="@+id/linearpayment"
+                                >
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:contentPadding="0.5dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    app:cardCornerRadius="12dp"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/multicolor"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/ic_vetcor_document"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Documents"
+                                            android:textColor="@color/black"
+                                            />
+
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="15dp"
+                                android:gravity="center"
+                                android:id="@+id/ll_enquary"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:cardElevation="1dp"
+                                    app:contentPadding="0.5dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="false"
+                                    app:cardCornerRadius="12dp"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/multicolor"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/ic_vetcor_enquiry"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Enquiry"
+                                            android:textColor="@color/black"
+
+                                            />
+
+
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginStart="15dp"
+                                android:id="@+id/ll_gallary"
+                                >
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:contentPadding="0.5dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="false"
+                                    app:cardCornerRadius="12dp"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/multicolor"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/ic_vector_menu_gallery"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Gallary"
+                                            android:textColor="@color/black"
+
+                                            />
+
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

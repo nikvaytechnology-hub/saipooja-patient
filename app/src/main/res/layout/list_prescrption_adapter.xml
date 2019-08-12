@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/rel_preHistory"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_prescription"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_vector_calendar" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/img_prescription"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor Name"
+                    android:id="@+id/txtDoctorName"
+                    android:textColor="@color/mediumPurple"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:id="@+id/txtDate"
+                        android:textColor="@color/black"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Details"
+                        android:id="@+id/txtViewDetail"
+                        android:textColor="@color/black"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+
+</LinearLayout>

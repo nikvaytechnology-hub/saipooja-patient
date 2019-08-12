@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Saipooja Patient</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Home_fragment">Home fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Profile_Fragment">Profile fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="gender_type">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="appoinment_type">
+        <item>All Appointment</item>
+        <item>Pending</item>
+        <item>Confirm</item>
+        <item>Cancel</item>
+        <item>Completed</item>
+    </string-array>
+</resources>
